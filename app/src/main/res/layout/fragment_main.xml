@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.string.me.up.nsofttestapp.mainasignment.main.MainViewModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/base_background_color"
+        tools:context=".mainasignment.main.MainFragment">
+
+        <ScrollView
+            android:id="@+id/parent_scroll_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/button_one"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/base_app_color_darker"
+                    android:tag="ONE"
+                    android:text="@string/button_one_text"
+                    android:textAllCaps="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/button_two"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/base_app_color_darker"
+                    android:tag="TWO"
+                    android:text="@string/button_two_text"
+                    android:textAllCaps="false"
+                    app:layout_constraintEnd_toEndOf="@id/button_one"
+                    app:layout_constraintStart_toStartOf="@id/button_one"
+                    app:layout_constraintTop_toBottomOf="@id/button_one" />
+
+                <Button
+                    android:id="@+id/button_three"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/base_app_color_darker"
+                    android:tag="THREE"
+                    android:text="@string/button_three_text"
+                    android:textAllCaps="false"
+                    app:layout_constraintEnd_toEndOf="@id/button_two"
+                    app:layout_constraintStart_toStartOf="@id/button_two"
+                    app:layout_constraintTop_toBottomOf="@id/button_two" />
+
+                <Button
+                    android:id="@+id/button_four"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/base_app_color_darker"
+                    android:tag="FOUR"
+                    android:text="@string/button_four_text"
+                    android:textAllCaps="false"
+                    app:layout_constraintEnd_toEndOf="@id/button_three"
+                    app:layout_constraintStart_toStartOf="@id/button_three"
+                    app:layout_constraintTop_toBottomOf="@id/button_three" />
+
+                <Button
+                    android:id="@+id/button_five"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/base_app_color_darker"
+                    android:tag="FIVE"
+                    android:text="@string/button_five_text"
+                    android:textAllCaps="false"
+                    app:layout_constraintEnd_toEndOf="@id/button_four"
+                    app:layout_constraintStart_toStartOf="@id/button_four"
+                    app:layout_constraintTop_toBottomOf="@id/button_four" />
+
+                <Button
+                    android:id="@+id/button_six"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/base_app_color_darker"
+                    android:tag="SIX"
+                    android:text="@string/button_six_text"
+                    android:textAllCaps="false"
+                    app:layout_constraintEnd_toEndOf="@id/button_five"
+                    app:layout_constraintStart_toStartOf="@id/button_five"
+                    app:layout_constraintTop_toBottomOf="@id/button_five" />
+
+                <Button
+                    android:id="@+id/button_seven"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/base_app_color_darker"
+                    android:tag="SEVEN"
+                    android:text="@string/button_seven_text"
+                    android:textAllCaps="false"
+                    app:layout_constraintEnd_toEndOf="@id/button_six"
+                    app:layout_constraintStart_toStartOf="@id/button_six"
+                    app:layout_constraintTop_toBottomOf="@id/button_six" />
+
+                <Button
+                    android:id="@+id/button_eight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/base_app_color_darker"
+                    android:tag="EIGHT"
+                    android:text="@string/button_eight_text"
+                    android:textAllCaps="false"
+                    app:layout_constraintEnd_toEndOf="@id/button_seven"
+                    app:layout_constraintStart_toStartOf="@id/button_seven"
+                    app:layout_constraintTop_toBottomOf="@id/button_seven" />
+
+                <Button
+                    android:id="@+id/button_nine"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="24dp"
+                    android:backgroundTint="@color/base_app_color"
+                    android:tag="NINE"
+                    android:text="@string/button_reset_text"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/button_eight"
+                    app:layout_constraintStart_toStartOf="@id/button_eight"
+                    app:layout_constraintTop_toBottomOf="@id/button_eight" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/button_recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="@+id/parent_scroll_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/parent_scroll_view"
+            app:layout_constraintTop_toTopOf="@+id/parent_scroll_view"
+            tools:listitem="@layout/button_card" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
