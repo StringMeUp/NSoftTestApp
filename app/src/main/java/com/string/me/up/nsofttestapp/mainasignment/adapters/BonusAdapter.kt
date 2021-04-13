@@ -16,6 +16,7 @@ class BonusAdapter(
 
     class BonusViewHolder(
         private val binding: VideoCardBinding,
+
         private val videoClickListener: OnVideoClick
     ) :
         RecyclerView.ViewHolder(binding.root) {

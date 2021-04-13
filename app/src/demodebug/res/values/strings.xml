@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">nCast</string>
+    <string name="app_id">4F8B3483</string>
+    <string name="button_one_text">Button 1</string>
+    <string name="button_two_text">Button 2</string>
+    <string name="button_three_text">Button 3</string>
+    <string name="button_four_text">Button 4</string>
+    <string name="button_five_text">Button 5</string>
+    <string name="button_six_text">Button 6</string>
+    <string name="button_seven_text">Button 7</string>
+    <string name="button_eight_text">Button 8</string>
+    <string name="button_reset_text">Reset</string>
+    <string name="runnable_event">Surprise, It\'s …</string>
+    <string name="delay_string">Delay time:</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main">Main</string>
+    <string name="Bonus">Bonus</string>
+    <string name="Video">Video Title PlaceHolder</string>
+    <string name="video_one">Out North</string>
+    <string name="video_two">Facing It</string>
+    <string name="video_three">Goodbye</string>
+    <string name="video_four">Moving</string>
+    <string name="media_route_menu_title">Play on&#8230;</string>
+    <string name="dialog_title">Informational title</string>
+    <string name="dialog_message">Please click on any video below.</string>
+    <string name="dialog_positive_button">Ok</string>
+    <string name="hide_reset">Hide reset event!</string>
+</resources>

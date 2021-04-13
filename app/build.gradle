@@ -5,6 +5,15 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        config {
+            storeFile file('/Users/user/Desktop/SRKeyStore/srkeystore')
+            storePassword 'srkeystore'
+            keyAlias 'srkeystore'
+            keyPassword 'srkeystore'
+        }
+    }
+
     compileSdkVersion 30
     buildToolsVersion "30.0.1"
 
@@ -21,7 +30,9 @@ android {
     buildTypes {
         release {
             minifyEnabled false
+            signingConfigs.config
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
     compileOptions {
@@ -34,6 +45,27 @@ android {
 
     buildFeatures {
         dataBinding = true
+    }
+    flavorDimensions 'productFlavors'
+    productFlavors {
+        demo {
+            dimension 'productFlavors'
+            applicationId 'nCast.@ramones.demo'
+            versionCode 1
+            minSdkVersion 21
+            signingConfig signingConfigs.config
+            targetSdkVersion 30
+            versionName 'demo'
+        }
+        prod {
+            dimension 'productFlavors'
+            applicationId 'com.prod@ramones.test.flavor'
+            versionCode 1
+            versionName 'prod'
+            targetSdkVersion 30
+            minSdkVersion 21
+            signingConfig signingConfigs.config
+        }
     }
 }
 
